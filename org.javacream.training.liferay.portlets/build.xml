@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="all" basedir=".">
+	<property name="deploy.name" value="javacream.demo.portlets" />
+	<property name="war.name" value="${deploy.name}.war" />
+	<property name="deploy.dir" value="../../tools/liferay-portal-6.2-ce-ga3/deploy" />
+	<target name="clear">
+			<delete failonerror="false">
+				<fileset dir="." includes="${war.name}" />
+				<fileset dir="../../tools/liferay-portal-6.2-ce-ga3/tomcat-7.0.42/webapps/${deploy.name}" includes="**/*.*" />
+			</delete>
+	</target>
+	<target name="deploy">
+		<copy todir="${deploy.dir}">
+			<fileset dir="." includes="${war.name}" />
+		</copy>
+	</target>
+	<target name="war">
+		<zip destfile="${war.name}">
+			<zipfileset dir="WebContent" includes="**/*.*" />
+		</zip>
+	</target>
+	<target name="all" depends="clear, war, deploy" />
+</project>

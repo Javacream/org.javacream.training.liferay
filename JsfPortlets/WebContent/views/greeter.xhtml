@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:aui="http://liferay.com/faces/aui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets" template="/WEB-INF/layout/layout.xhtml">
+
+	<ui:define name="pageHeader">
+	Greeter Page
+	</ui:define>
+	<ui:define name="content">
+	
+		<h:form>
+			<h:inputText value="#{greeterWebBean.greeterMessage}"></h:inputText>
+			<h:commandButton action="#{greeterWebBean.webGreet}" value="Greet!"></h:commandButton>
+			<h:outputText value="#{greeterWebBean.greeting}"></h:outputText>
+		</h:form>
+	</ui:define>
+</ui:composition>

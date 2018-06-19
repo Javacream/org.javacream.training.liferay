@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:aui="http://liferay.com/faces/aui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="people-layout.xhtml">
+
+	<ui:define name="people-content">
+		<h:dataTable value="#{peopleListWebBean.people}" var="_person">
+			<f:facet name="header">
+				<h:outputText value="People List" />
+			</f:facet>
+			<h:column>
+				<f:facet name="header">
+					<h:outputText value="Lastname" />
+				</f:facet>
+				<h:outputText value="#{_person.lastname}" />
+			</h:column>
+			<h:column>
+				<f:facet name="header">
+					<h:outputText value="Firstname" />
+				</f:facet>
+				<h:outputText value="#{_person.firstname}" />
+			</h:column>
+		</h:dataTable>
+	</ui:define>
+</ui:composition>

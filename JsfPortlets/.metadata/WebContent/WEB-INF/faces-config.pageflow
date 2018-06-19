@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13462537489690" configfile="/JsfPortlets/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="pages/echo.xhtml" x="122" y="178" id="pf13462537877351" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" path="pages/echo.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="562" id="pf13462537877368" outlinks="pf144854095063210" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/help.xhtml?javax.portlet.faces.PortletMode=help" x="122" y="948" id="pf134625378773610" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" path="/pages/help.xhtml?javax.portlet.faces.PortletMode=help"/>
+  <nodes xsi:type="pageflow:PFPage" name="views/index" x="338" y="562" id="pf14485235469070" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" outlinks="pf144854095063211 pf144854095063212 pf144854095063213" inlinks="pf144854095063210" path="/views/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="views/echo" x="122" y="1333" id="pf14485236196814" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" path="/views/echo.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="views/simple" x="554" y="178" id="pf14485239685928" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf144854095063211" path="/views/simple.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="views/greeter" x="554" y="946" id="pf144854095063214" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf144854095063212" path="/views/greeter.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="views/people" x="554" y="562" id="pf144854095063215" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf15293844767231 pf15293844767232" inlinks="pf144854095063213" path="/views/people.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="views/people-list.xhtml" x="770" y="370" id="pf15293844767233" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf15293844767231" path="/views/people-list.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="views/create-person.xhtml" x="770" y="754" id="pf15293844767234" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" inlinks="pf15293844767232" path="/views/create-person.xhtml"/>
+  <links id="pf144854095063211" target="pf14485239685928" source="pf14485235469070" outcome="simple"/>
+  <links id="pf144854095063212" target="pf144854095063214" source="pf14485235469070" outcome="greeter"/>
+  <links id="pf144854095063213" target="pf144854095063215" source="pf14485235469070" outcome="people"/>
+  <links id="pf144854095063210" target="pf14485235469070" source="pf13462537877368" outcome="home"/>
+  <links id="pf15293844767231" target="pf15293844767233" source="pf144854095063215" outcome="peopleList"/>
+  <links id="pf15293844767232" target="pf15293844767234" source="pf144854095063215" outcome="createPerson"/>
+</pageflow:Pageflow>

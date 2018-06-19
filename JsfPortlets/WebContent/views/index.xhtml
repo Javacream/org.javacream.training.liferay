@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:aui="http://liferay.com/faces/aui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<h:form>
+	<ul>
+		<li><h:link outcome="simple" value="Simple Bean" rendered="#{rulesBean.simpleLinkAvailable}"></h:link></li>
+		<li><h:link outcome="people" value="People Application"></h:link></li>
+		<li><h:link outcome="greeter" value="Greeter"></h:link></li>
+		<li><h:link outcome="hello" value="Hello"></h:link></li>
+	</ul>
+	</h:form>
+</ui:composition>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<f:view>
+<hr />
+<h:messages />
+<h1 align="center">
+	<ui:insert name="pageHeader" />
+</h1>
+<hr />
+<div align="center">
+	<table class="contentTable" width="100%">
+		<tr>
+			<td width="30%" id="content-left"><ui:insert name="content-left">
+					<ui:include src="/views/content/favorites.xhtml" />
+				</ui:insert></td>
+			<td width="40%" id="content"><ui:insert name="content" /></td>
+			<td width="30%" id="content-right"><ui:insert
+					name="content-right">
+					<ui:include src="/views/content/news.xhtml"></ui:include>
+				</ui:insert></td>
+		</tr>
+	</table>
+	<h:link outcome="home" value="Back"></h:link>
+	<hr />
+</div>
+<hr />
+<ui:insert name="footer">
+	<ui:include src="/views/footer.xhtml"></ui:include>
+</ui:insert>
+</f:view>
+</html>

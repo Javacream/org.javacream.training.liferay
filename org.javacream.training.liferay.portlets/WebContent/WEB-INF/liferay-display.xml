@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.1.0//EN" "http://www.liferay.com/dtd/liferay-display_6_1_0.dtd">
+
+<display>
+	<category name="Javacream Demo">
+		<portlet id="SimpleHelloWorld"></portlet>
+		<portlet id="SimpleParam"></portlet>
+		<portlet id="JavacreamDemo"></portlet>
+		<portlet id="JavacreamJspDemo"></portlet>
+		<portlet id="EventConsumer"></portlet>
+		<portlet id="EventProducer"></portlet>
+		<portlet id="SimpleAjaxPortlet"></portlet>
+		<portlet id="SharedRenderParameter1"></portlet>
+		<portlet id="SharedRenderParameter2"></portlet>
+		<portlet id="SessionPortlet1"></portlet>
+		<portlet id="SessionPortlet2"></portlet>
+	</category>
+</display>
